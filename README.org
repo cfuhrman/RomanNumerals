@@ -1,0 +1,46 @@
+#+TITLE: README for Roman Numerals Program
+#+AUTHOR: Christopher M. Fuhrman
+#+EMAIL: cfuhrman@pobox.com
+#+OPTIONS: email:t
+#+LATEX_HEADER: \usepackage{fancyhdr}
+#+LATEX_HEADER: \pagestyle{fancyplain}
+#+LATEX_HEADER: \usepackage{bookmark}
+#+LATEX_HEADER: \hypersetup{urlcolor=blue}
+#+LATEX_HEADER: \hypersetup{colorlinks,urlcolor=blue}
+#+LATEX_HEADER: \fancyhead[RE,LO]{\leftmark}
+#+LATEX_HEADER: \fancyhead[LE,RO]{\thepage}
+
+#+LATEX: \thispagestyle{empty}
+
+* Overview
+
+  This is a simple C# program for converting between Roman Numerals and base10
+  integers.
+
+* Requirements
+
+   * dotNet 8.x or greater
+
+* Building
+
+  #+begin_src sh-mode
+  # Binary will be created in bin/Debug/net8.0/RomanNumerals
+  cd RomanNumerals
+  dotnet build
+  #+end_src
+
+* Usage
+
+  #+begin_src sh-mode
+  cd RomanNumerals/bin/Debug/net8.0/
+  ./RomanNumerals 2024
+  Base 10 Integer 2024 converts to Roman Numeral 'MMXXIV'
+  ./RomanNumerals MMXXIV
+  Roman Numeral 'MMXXIV' converts to base 10 Integer 2024
+  ./RomanNumerals MCMLXVI
+  Roman Numeral 'MCMLXVI' converts to base 10 Integer 1966
+  #+end_src
+
+* Copyright
+
+  See [[file:RomanNumerals/LICENSE::Copyright (c) 2024, Christopher M. Fuhrman][LICENSE]].
