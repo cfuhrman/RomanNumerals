@@ -1,4 +1,16 @@
-﻿
+﻿/**
+ * Program.cs
+ *
+ * Copyright (c) 2024 Christopher M. Fuhrman
+ * All rights reserved.
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under terms of the Simplified BSD License (also
+ * known as the "2-Clause License" or "FreeBSD License".)
+ *
+ * Created on Tue Aug 12 22:44:57 2024 UTC
+ */
+
 internal class Program
 {
     private static void Main(string[] args)
@@ -28,3 +40,5 @@ internal class Program
         // Console.WriteLine("Hello, World!");
     }
 }
+
+/* Program.cs ends here */
