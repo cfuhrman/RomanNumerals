@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace RomanNumerals.BPA
+﻿namespace RomanNumerals.Service
 {
-    internal class Convert
+    internal class Converter
     {
         /// <summary>
         ///     Contains Roman Numeral to base10 Integer conversions

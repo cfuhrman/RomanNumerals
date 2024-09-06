@@ -17,12 +17,12 @@ internal class Program
 
         if (int.TryParse(inputValue, out base10Numeral))
         {
-            outputValue = RomanNumerals.BPA.Convert.convert(inputValue);
+            outputValue = RomanNumerals.Service.Converter.convert(inputValue);
             Console.WriteLine($"Base 10 Integer {inputValue} converts to Roman Numeral \'{outputValue}\'");
         }
         else
         {
-            outputValue = RomanNumerals.BPA.Convert.convert(inputValue);
+            outputValue = RomanNumerals.Service.Converter.convert(inputValue);
             Console.WriteLine($"Roman Numeral \'{inputValue}\' converts to base 10 Integer {outputValue}");
         }
         // Console.WriteLine("Hello, World!");

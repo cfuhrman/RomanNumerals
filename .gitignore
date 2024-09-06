@@ -2,6 +2,8 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/RomanNumerals/obj
-/RomanNumerals/bin/Debug/net7.0
+*~
 /.vs
+/RomanNumerals/bin/Debug/net7.0
+/RomanNumerals/bin/Debug/net8.0
+/RomanNumerals/obj
