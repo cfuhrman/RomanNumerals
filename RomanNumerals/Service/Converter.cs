@@ -18,7 +18,7 @@ namespace RomanNumerals.Service
         /// <summary>
         ///     Contains Roman Numeral to base10 Integer conversions
         /// </summary>
-        private static Dictionary<string, int> conversionTable = new Dictionary<string, int>
+        private static readonly Dictionary<string, int> conversionTable = new Dictionary<string, int>
         {
             {"I", 1},
             {"V", 5},
@@ -27,6 +27,16 @@ namespace RomanNumerals.Service
             {"C", 100},
             {"D", 500},
             {"M", 1000}
+        };
+
+        private static readonly Dictionary<string, string> romanReplacements = new Dictionary<string, string>
+        {
+            {"CCCC", "CD"},
+            {"DCD",  "CM"},
+            {"XXXX", "XL"},
+            {"LXL",  "XC"},
+            {"IIII", "IV"},
+            {"VIV",  "IX"}
         };
 
         /// <summary>
@@ -58,16 +68,6 @@ namespace RomanNumerals.Service
             int divided = base10Integer;
             string romanNumber = "";
             string[] reversed = conversionTable.Keys.Reverse().ToArray();
-
-            Dictionary<string, string> romanReplacements = new Dictionary<string, string>
-            {
-                {"CCCC", "CD"},
-                {"DCD",  "CM"},
-                {"XXXX", "XL"},
-                {"LXL",  "XC"},
-                {"IIII", "IV"},
-                {"VIV",  "IX"}
-            };
 
             // Build initial Roman Number
             foreach (var key in reversed)
